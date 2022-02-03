@@ -2,13 +2,13 @@
 //  MovieTableViewCell.swift
 //  StarsWarsWiki
 //
-//  Created by Salman Raza on 12/02/2021.
+//  Created by Muzammil Peer on 04/02/2022.
 //
 
 import UIKit
 
 class MovieTableViewCell: BaseTableViewCell {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {

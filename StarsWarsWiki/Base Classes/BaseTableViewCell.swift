@@ -22,7 +22,7 @@ class BaseTableViewCell: UITableViewCell, CellTapDelegate {
     }
     
     func setupCell(_ rowViewModel: RowViewModel) {
-        rowViewModel.cellTapDelegate = self
+//        rowViewModel.cellTapDelegate = self
         
         //Override in child class to provide cell setup functionality if needed
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BaseCellViewModel: NSObject, RowViewModel {
+class BaseCellViewModel: RowViewModel {
     var cellIdentifier: String
     var cellTapDelegate: CellTapDelegate?
     

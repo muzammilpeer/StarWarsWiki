@@ -11,8 +11,8 @@ protocol CellTapDelegate {
     func cellTapped()
 }
 
-protocol RowViewModel: NSObject {
-    var cellIdentifier: String { get }
+protocol RowViewModel {
+    var cellIdentifier: String { get  set}
     var cellTapDelegate: CellTapDelegate? { get set }
     
     func fetchData()

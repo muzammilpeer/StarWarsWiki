@@ -7,14 +7,18 @@
 
 import Foundation
 
-class HomeOptionCellViewModel: BaseCellViewModel {
+class HomeOptionCellViewModel {
+    
+    public var cellIdentifier: String
     var titleText: String?
     var actionUrlString: String?
+    var select: () -> Void
     
-    init(_ identifier: String, _ title: String, _ actionUrl: String) {
-        super.init(identifier)
+    init(_ identifier: String, _ title: String, _ actionUrl: String,selection: @escaping () -> Void ) {
+        cellIdentifier = identifier
         titleText = title
         actionUrlString = actionUrl
+        select = selection
     }
     
     func getMoviesViewModel() -> MoviesViewModel {

@@ -2,7 +2,7 @@
 //  HomeOptionTableViewCell.swift
 //  StarsWarsWiki
 //
-//  Created by Salman Raza on 12/02/2021.
+//  Created by Muzammil Peer on 04/02/2022.
 //
 
 import UIKit
@@ -23,21 +23,20 @@ class HomeOptionTableViewCell: BaseTableViewCell {
         // Configure the view for the selected state
     }
     
-    override func setupCell(_ rowViewModel: RowViewModel) {
-        super.setupCell(rowViewModel)
-        
-        viewModel = rowViewModel as? HomeOptionCellViewModel
-        
-        self.titleLabel.text = viewModel?.titleText ?? ""
+    func setupCell(_ viewModel: HomeOptionCellViewModel) {
+        self.viewModel = viewModel
+        self.titleLabel.text = viewModel.titleText ?? ""
     }
 
     override func cellTapped() {
         if viewModel?.titleText?.lowercased() == "films" {
-            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            if let viewController = storyboard.instantiateViewController(identifier: "MoviesViewController") as? MoviesViewController {
-                viewController.viewModel = viewModel?.getMoviesViewModel()
-                self.viewController?.navigationController?.pushViewController(viewController, animated: true)
-            }
+            let viewModel = MoviesViewModel.init(with: viewModel?.actionUrlString ?? "")
+            let viewController = MoviesViewController.init(viewModel:viewModel)
+            viewController.show(viewController, sender: viewController)
+//            if let viewController = storyboard.instantiateViewController(identifier: "MoviesViewController") as? MoviesViewController {
+//                viewController.viewModel = viewModel?.getMoviesViewModel()
+//                self.viewController?.navigationController?.pushViewController(viewController, animated: true)
+//            }
         }
     }
 }

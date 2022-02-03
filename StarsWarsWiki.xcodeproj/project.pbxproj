@@ -8,15 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		78A470C2A420B0B922C29B82 /* Pods_StarsWarsWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5AEA258F14AD944EAA3B13 /* Pods_StarsWarsWikiTests.framework */; };
+		7F37326F27AC7511009AC9D0 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F37326D27AC7510009AC9D0 /* MoviesViewController.xib */; };
+		7F37327027AC7511009AC9D0 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37326E27AC7510009AC9D0 /* MoviesViewController.swift */; };
+		7F37327327AC7588009AC9D0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37327127AC7588009AC9D0 /* MovieTableViewCell.swift */; };
+		7F37327427AC7588009AC9D0 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F37327227AC7588009AC9D0 /* MovieTableViewCell.xib */; };
+		7F37327727AC7EC0009AC9D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37327527AC7EC0009AC9D0 /* HomeViewController.swift */; };
+		7F37327827AC7EC0009AC9D0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F37327627AC7EC0009AC9D0 /* HomeViewController.xib */; };
+		7F37327B27AC7F1D009AC9D0 /* HomeOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37327927AC7F1D009AC9D0 /* HomeOptionTableViewCell.swift */; };
+		7F37327C27AC7F1D009AC9D0 /* HomeOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F37327A27AC7F1D009AC9D0 /* HomeOptionTableViewCell.xib */; };
 		7F87286A25D3DFDC005B669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87286925D3DFDC005B669B /* AppDelegate.swift */; };
 		7F87286C25D3DFDC005B669B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87286B25D3DFDC005B669B /* SceneDelegate.swift */; };
-		7F87286E25D3DFDC005B669B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87286D25D3DFDC005B669B /* HomeViewController.swift */; };
 		7F87287125D3DFDC005B669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F87286F25D3DFDC005B669B /* Main.storyboard */; };
 		7F87287325D3DFDD005B669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F87287225D3DFDD005B669B /* Assets.xcassets */; };
 		7F87287625D3DFDD005B669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F87287425D3DFDD005B669B /* LaunchScreen.storyboard */; };
 		7F87288125D3DFDD005B669B /* StarsWarsWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87288025D3DFDD005B669B /* StarsWarsWikiTests.swift */; };
 		7F87288C25D3DFDD005B669B /* StarsWarsWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87288B25D3DFDD005B669B /* StarsWarsWikiUITests.swift */; };
-		7F87290B25D5F4C3005B669B /* HomeOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87290A25D5F4C3005B669B /* HomeOptionTableViewCell.swift */; };
 		7F87291025D5F519005B669B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87290F25D5F519005B669B /* Observable.swift */; };
 		7F87291625D5F65B005B669B /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87291525D5F65B005B669B /* RowViewModel.swift */; };
 		7F87291B25D5F6FF005B669B /* HomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87291A25D5F6FF005B669B /* HomeScreenTests.swift */; };
@@ -30,8 +36,6 @@
 		7F87296425D60854005B669B /* GetMoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87295B25D60854005B669B /* GetMoviesManager.swift */; };
 		7F87296525D60854005B669B /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87295E25D60854005B669B /* MovieCellViewModel.swift */; };
 		7F87296625D60854005B669B /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87295F25D60854005B669B /* MoviesViewModel.swift */; };
-		7F87296725D60854005B669B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87296225D60854005B669B /* MovieTableViewCell.swift */; };
-		7F87296825D60854005B669B /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87296325D60854005B669B /* MoviesViewController.swift */; };
 		7F87296E25D608DE005B669B /* GetMoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87296C25D608DE005B669B /* GetMoviesResponseModel.swift */; };
 		7F87296F25D608DE005B669B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87296D25D608DE005B669B /* Movie.swift */; };
 		9ACE146DE2DFAFF7C54E6A52 /* Pods_StarsWarsWiki_StarsWarsWikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B433131AFA70325E0596C45 /* Pods_StarsWarsWiki_StarsWarsWikiUITests.framework */; };
@@ -61,10 +65,17 @@
 		3B672108E1CF0AFB011E2EA8 /* Pods-StarsWarsWiki-StarsWarsWikiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarsWarsWiki-StarsWarsWikiUITests.debug.xcconfig"; path = "Target Support Files/Pods-StarsWarsWiki-StarsWarsWikiUITests/Pods-StarsWarsWiki-StarsWarsWikiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F5AEA258F14AD944EAA3B13 /* Pods_StarsWarsWikiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarsWarsWikiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66528DB2323F3353C5FD82A0 /* Pods-StarsWarsWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarsWarsWikiTests.debug.xcconfig"; path = "Target Support Files/Pods-StarsWarsWikiTests/Pods-StarsWarsWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F37326D27AC7510009AC9D0 /* MoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
+		7F37326E27AC7510009AC9D0 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		7F37327127AC7588009AC9D0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		7F37327227AC7588009AC9D0 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		7F37327527AC7EC0009AC9D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7F37327627AC7EC0009AC9D0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		7F37327927AC7F1D009AC9D0 /* HomeOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOptionTableViewCell.swift; sourceTree = "<group>"; };
+		7F37327A27AC7F1D009AC9D0 /* HomeOptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeOptionTableViewCell.xib; sourceTree = "<group>"; };
 		7F87286625D3DFDC005B669B /* StarsWarsWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarsWarsWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F87286925D3DFDC005B669B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F87286B25D3DFDC005B669B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F87286D25D3DFDC005B669B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F87287025D3DFDC005B669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F87287225D3DFDD005B669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F87287525D3DFDD005B669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,7 +86,6 @@
 		7F87288725D3DFDD005B669B /* StarsWarsWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarsWarsWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F87288B25D3DFDD005B669B /* StarsWarsWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsWarsWikiUITests.swift; sourceTree = "<group>"; };
 		7F87288D25D3DFDD005B669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F87290A25D5F4C3005B669B /* HomeOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOptionTableViewCell.swift; sourceTree = "<group>"; };
 		7F87290F25D5F519005B669B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		7F87291525D5F65B005B669B /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
 		7F87291A25D5F6FF005B669B /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
@@ -89,8 +99,6 @@
 		7F87295B25D60854005B669B /* GetMoviesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMoviesManager.swift; sourceTree = "<group>"; };
 		7F87295E25D60854005B669B /* MovieCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
 		7F87295F25D60854005B669B /* MoviesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
-		7F87296225D60854005B669B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
-		7F87296325D60854005B669B /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		7F87296C25D608DE005B669B /* GetMoviesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMoviesResponseModel.swift; sourceTree = "<group>"; };
 		7F87296D25D608DE005B669B /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		A36CCA1BF4A7135CD0F19A94 /* Pods-StarsWarsWiki-StarsWarsWikiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarsWarsWiki-StarsWarsWikiUITests.release.xcconfig"; path = "Target Support Files/Pods-StarsWarsWiki-StarsWarsWikiUITests/Pods-StarsWarsWiki-StarsWarsWikiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -292,7 +300,8 @@
 		7F87290225D5F21E005B669B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7F87286D25D3DFDC005B669B /* HomeViewController.swift */,
+				7F37327527AC7EC0009AC9D0 /* HomeViewController.swift */,
+				7F37327627AC7EC0009AC9D0 /* HomeViewController.xib */,
 				7F87290325D5F21E005B669B /* Cells */,
 			);
 			path = Views;
@@ -301,7 +310,8 @@
 		7F87290325D5F21E005B669B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7F87290A25D5F4C3005B669B /* HomeOptionTableViewCell.swift */,
+				7F37327927AC7F1D009AC9D0 /* HomeOptionTableViewCell.swift */,
+				7F37327A27AC7F1D009AC9D0 /* HomeOptionTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -369,7 +379,8 @@
 		7F87296025D60854005B669B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7F87296325D60854005B669B /* MoviesViewController.swift */,
+				7F37326E27AC7510009AC9D0 /* MoviesViewController.swift */,
+				7F37326D27AC7510009AC9D0 /* MoviesViewController.xib */,
 				7F87296125D60854005B669B /* Cells */,
 			);
 			path = Views;
@@ -378,7 +389,8 @@
 		7F87296125D60854005B669B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7F87296225D60854005B669B /* MovieTableViewCell.swift */,
+				7F37327127AC7588009AC9D0 /* MovieTableViewCell.swift */,
+				7F37327227AC7588009AC9D0 /* MovieTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -515,8 +527,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F87287625D3DFDD005B669B /* LaunchScreen.storyboard in Resources */,
+				7F37327C27AC7F1D009AC9D0 /* HomeOptionTableViewCell.xib in Resources */,
+				7F37327427AC7588009AC9D0 /* MovieTableViewCell.xib in Resources */,
 				7F87287325D3DFDD005B669B /* Assets.xcassets in Resources */,
 				7F87287125D3DFDC005B669B /* Main.storyboard in Resources */,
+				7F37326F27AC7511009AC9D0 /* MoviesViewController.xib in Resources */,
+				7F37327827AC7EC0009AC9D0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,22 +663,22 @@
 				7F87292A25D5F80F005B669B /* BaseTableViewCell.swift in Sources */,
 				7F87293C25D5FE5B005B669B /* GetHomeOptionsManager.swift in Sources */,
 				7F87296F25D608DE005B669B /* Movie.swift in Sources */,
-				7F87286E25D3DFDC005B669B /* HomeViewController.swift in Sources */,
 				7F87294125D5FE6A005B669B /* GetHomeOptionsResponseModel.swift in Sources */,
 				7F87296625D60854005B669B /* MoviesViewModel.swift in Sources */,
 				7F87291025D5F519005B669B /* Observable.swift in Sources */,
-				7F87296725D60854005B669B /* MovieTableViewCell.swift in Sources */,
 				7F87296525D60854005B669B /* MovieCellViewModel.swift in Sources */,
 				7F87293725D5FA7D005B669B /* HomeViewModel.swift in Sources */,
+				7F37327327AC7588009AC9D0 /* MovieTableViewCell.swift in Sources */,
 				7F87296425D60854005B669B /* GetMoviesManager.swift in Sources */,
 				7F87296E25D608DE005B669B /* GetMoviesResponseModel.swift in Sources */,
 				7F87292F25D5F978005B669B /* HomeOptionCellViewModel.swift in Sources */,
+				7F37327027AC7511009AC9D0 /* MoviesViewController.swift in Sources */,
+				7F37327B27AC7F1D009AC9D0 /* HomeOptionTableViewCell.swift in Sources */,
 				7F87292525D5F7A8005B669B /* BaseCellViewModel.swift in Sources */,
-				7F87290B25D5F4C3005B669B /* HomeOptionTableViewCell.swift in Sources */,
+				7F37327727AC7EC0009AC9D0 /* HomeViewController.swift in Sources */,
 				7F87286A25D3DFDC005B669B /* AppDelegate.swift in Sources */,
 				7F87286C25D3DFDC005B669B /* SceneDelegate.swift in Sources */,
 				7F87291625D5F65B005B669B /* RowViewModel.swift in Sources */,
-				7F87296825D60854005B669B /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

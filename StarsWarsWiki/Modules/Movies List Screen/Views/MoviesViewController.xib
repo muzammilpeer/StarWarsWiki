@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesViewController" customModule="StarsWarsWiki" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="0Xg-ST-Dlz" id="YVh-sJ-JQe"/>
+                <outlet property="view" destination="s7B-iM-M1m" id="4UX-dV-ZqG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="s7B-iM-M1m">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Below is the list of all Star Wars franchise movies" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvp-eF-58G">
+                    <rect key="frame" x="16" y="16" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQW-Dh-7FH">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="R1B-Ip-5UZ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Xg-ST-Dlz">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uF3-sR-8xk"/>
+                        <outlet property="delegate" destination="-1" id="Wgy-6f-TTo"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g6K-NU-YY1"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RQW-Dh-7FH" secondAttribute="trailing" id="4md-9l-a9K"/>
+                <constraint firstItem="Fvp-eF-58G" firstAttribute="leading" secondItem="g6K-NU-YY1" secondAttribute="leading" constant="16" id="8b5-2M-XEW"/>
+                <constraint firstItem="0Xg-ST-Dlz" firstAttribute="leading" secondItem="g6K-NU-YY1" secondAttribute="leading" id="Gom-fU-Dq1"/>
+                <constraint firstItem="0Xg-ST-Dlz" firstAttribute="trailing" secondItem="g6K-NU-YY1" secondAttribute="trailing" id="VpN-8o-hel"/>
+                <constraint firstItem="RQW-Dh-7FH" firstAttribute="top" secondItem="Fvp-eF-58G" secondAttribute="bottom" constant="15" id="ezX-SZ-Suw"/>
+                <constraint firstItem="RQW-Dh-7FH" firstAttribute="leading" secondItem="s7B-iM-M1m" secondAttribute="leading" id="o18-nd-vRo"/>
+                <constraint firstItem="0Xg-ST-Dlz" firstAttribute="top" secondItem="RQW-Dh-7FH" secondAttribute="bottom" id="ojt-LZ-jeH"/>
+                <constraint firstAttribute="bottom" secondItem="0Xg-ST-Dlz" secondAttribute="bottom" id="uyj-Ku-pE3"/>
+                <constraint firstItem="g6K-NU-YY1" firstAttribute="trailing" secondItem="Fvp-eF-58G" secondAttribute="trailing" constant="16" id="wcQ-N5-ASC"/>
+                <constraint firstItem="Fvp-eF-58G" firstAttribute="top" secondItem="g6K-NU-YY1" secondAttribute="top" constant="16" id="xeh-Xn-IzR"/>
+            </constraints>
+            <point key="canvasLocation" x="679" y="-1173"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
