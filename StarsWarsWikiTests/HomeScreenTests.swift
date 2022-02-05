@@ -27,15 +27,17 @@ class HomeScreenTests: XCTestCase {
         let promise = expectation(description: "Home screen should show options")
         
         let homeViewModel = HomeViewModel.init()
-        
-        homeViewModel.dataSource?.bind { (dataSource) in
-            if dataSource.count > 0 {
-                promise.fulfill()
-            }
-        }
         homeViewModel.fetchData()
+
+        homeViewModel.dataSource?.bind { (dataSource) in
+            XCTAssertTrue(dataSource.count > 0, "Test passed")
+            if dataSource.count <= 0 {
+                XCTFail("Test case failed")
+            }
+//            promise.fulfill()
+        }
         
-        wait(for: [promise], timeout: 10)
+        wait(for: [promise], timeout: 5)
     }
 
     func testPerformanceExample() throws {

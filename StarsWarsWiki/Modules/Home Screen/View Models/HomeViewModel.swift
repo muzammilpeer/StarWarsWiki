@@ -20,7 +20,7 @@ class HomeViewModel {
     var dataSource: Observable<[HomeOptionCellViewModel]>?
     var homeOptions: GetHomeOptionsResponseModel?
     var delegate:HomeViewUpdateDelegate? = nil
-    
+    var localDataSource:[HomeOptionCellViewModel] = []
     init() {
         dataSource = Observable([])
     }
@@ -41,14 +41,14 @@ class HomeViewModel {
     
     func createDataSource(from response: GetHomeOptionsResponseModel?) {
         homeOptions = response
-        
+        localDataSource = []
         if let people = homeOptions?.people {
             let option = HomeOptionCellViewModel.init(CellIdentifiers.HomeOptionCellIdentifier, "People", people,selection: {})
             option.select = {
                 [weak self] in
                 self?.delegate?.selectType(viewModel: option)
             }
-            self.dataSource?.value.append(option)
+            localDataSource.append(option)
         }
         
         if let planets = homeOptions?.planets {
@@ -57,7 +57,7 @@ class HomeViewModel {
                 [weak self] in
                 self?.delegate?.selectType(viewModel: option)
             }
-            self.dataSource?.value.append(option)
+            localDataSource.append(option)
         }
         
         if let films = homeOptions?.films {
@@ -66,7 +66,7 @@ class HomeViewModel {
                 [weak self] in
                 self?.delegate?.selectType(viewModel: option)
             }
-            self.dataSource?.value.append(option)
+            localDataSource.append(option)
         }
         
         if let species = homeOptions?.species {
@@ -75,7 +75,7 @@ class HomeViewModel {
                 [weak self] in
                 self?.delegate?.selectType(viewModel: option)
             }
-            self.dataSource?.value.append(option)
+            localDataSource.append(option)
         }
         
         if let vehicles = homeOptions?.vehicles {
@@ -84,7 +84,7 @@ class HomeViewModel {
                 [weak self] in
                 self?.delegate?.selectType(viewModel: option)
             }
-            self.dataSource?.value.append(option)
+            localDataSource.append(option)
         }
         
         if let starships = homeOptions?.starships {
@@ -93,8 +93,10 @@ class HomeViewModel {
                 [weak self] in
                 self?.delegate?.selectType(viewModel: option)
             }
-            self.dataSource?.value.append(option)
+            localDataSource.append(option)
         }
+        
+        self.dataSource?.value = localDataSource
         
     }
     

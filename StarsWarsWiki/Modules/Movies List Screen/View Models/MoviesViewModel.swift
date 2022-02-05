@@ -14,6 +14,7 @@ fileprivate enum CellIdentifiers {
 class MoviesViewModel {
     let moviesUrl: String
     var dataSource: Observable<[MovieCellViewModel]>?
+    var localDataSource: [MovieCellViewModel] = []
 
     init(with url: String) {
         dataSource = Observable([])
@@ -32,9 +33,11 @@ class MoviesViewModel {
     
     func createDataSource(from response: GetMoviesResponseModel?) {
         if let moviesList = response?.movies {
-            self.dataSource?.value = moviesList.map { items in
+            localDataSource = moviesList.map { items in
                 MovieCellViewModel.init(CellIdentifiers.MovieCellIdentifier, items.title ?? "", items.url ?? "")
             }
+            
+            self.dataSource?.value = localDataSource
         }
     }
     
