@@ -36,5 +36,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7E0EA94-2B53-421A-A13E-E8B6A7901AEF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarsWarsWiki/Modules/Movies List Screen/View Models/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C7E0EA94-2B53-421A-A13E-E8B6A7901AEF - 4614a38dedf6be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;StarsWarsWiki.GetMoviesResponseModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StarsWarsWiki.MoviesViewModel.fetchData() -&gt; ()"
+                  moduleName = "StarsWarsWiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muzammilpeer/Git/StarWarsWiki/StarsWarsWiki/Modules/Movies%20List%20Screen/View%20Models/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "C7E0EA94-2B53-421A-A13E-E8B6A7901AEF - 4614a38dedf6be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;StarsWarsWiki.GetMoviesResponseModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StarsWarsWiki.MoviesViewModel.fetchData() -&gt; ()"
+                  moduleName = "StarsWarsWiki"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muzammilpeer/Git/StarWarsWiki/StarsWarsWiki/Modules/Movies%20List%20Screen/View%20Models/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

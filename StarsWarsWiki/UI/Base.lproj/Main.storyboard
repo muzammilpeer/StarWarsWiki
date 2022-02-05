@@ -29,7 +29,7 @@
         <!--Stars Wars Wiki-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="StarsWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="StarsWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@ Select an option below to see details</string>
         <!--Movies-->
         <scene sceneID="Naa-5E-202">
             <objects>
-                <viewController storyboardIdentifier="MoviesViewController1" title="Movies" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yNj-D7-dqN" customClass="MoviesViewController" customModule="StarsWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Movies" id="yNj-D7-dqN" customClass="MoviesViewController" customModule="StarsWarsWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TjJ-pd-rFt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

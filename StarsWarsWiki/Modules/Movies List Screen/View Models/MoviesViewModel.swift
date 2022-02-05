@@ -34,7 +34,7 @@ class MoviesViewModel {
     func createDataSource(from response: GetMoviesResponseModel?) {
         if let moviesList = response?.movies {
             localDataSource = moviesList.map { items in
-                MovieCellViewModel.init(CellIdentifiers.MovieCellIdentifier, items.title ?? "", items.url ?? "")
+                MovieCellViewModel.init(CellIdentifiers.MovieCellIdentifier, items.title ?? items.name ?? "", items.url ?? "")
             }
             
             self.dataSource?.value = localDataSource

@@ -20,7 +20,8 @@ class Movie : Codable {
 	let title : String?
 	let url : String?
 	let vehicles : [String]?
-
+    let name : String?
+    
 
 	enum CodingKeys: String, CodingKey {
 		case characters = "characters"
@@ -35,6 +36,7 @@ class Movie : Codable {
 		case species = "species"
 		case starships = "starships"
 		case title = "title"
+        case name = "name"
 		case url = "url"
 		case vehicles = "vehicles"
 	}
@@ -52,6 +54,7 @@ class Movie : Codable {
 		species = try values.decodeIfPresent([String].self, forKey: .species)
 		starships = try values.decodeIfPresent([String].self, forKey: .starships)
 		title = try values.decodeIfPresent(String.self, forKey: .title)
+        name = try values.decodeIfPresent(String.self, forKey: .name)
 		url = try values.decodeIfPresent(String.self, forKey: .url)
 		vehicles = try values.decodeIfPresent([String].self, forKey: .vehicles)
  	}
